@@ -7,7 +7,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-
+//lol
 public class Account 
 {
 	@Id @GeneratedValue (strategy=GenerationType.AUTO)
