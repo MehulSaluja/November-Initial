@@ -4,13 +4,14 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Table;
+
 
 @Entity
-//lol
+
 public class Account 
 {
-	@Id @GeneratedValue (strategy=GenerationType.AUTO)
+	 @GeneratedValue (strategy=GenerationType.AUTO)
+	 @Id
 	
 	private Long id;
 	@Column (length = 100)
@@ -30,6 +31,11 @@ public class Account
 		
 		
 	}
+	public Account ()
+	{
+		
+	}
+
 
 	public Long getId() {
 		return id;
